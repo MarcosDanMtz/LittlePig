@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_little_pig_admin_user"
     android:layout_width="match_parent"
@@ -10,29 +11,339 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.marcosmtz.littlepig.LittlePigAdminUser">
 
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bienbenido a Little Pig"
-        android:id="@+id/textViewUserEmail"
-        android:layout_gravity="center_horizontal"/>
-
-        <Button
-            android:text="Cerrar Sesion"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/buttonLogout" />
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Bienvenido a Little Pig"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_element"
+                android:background="@color/colorBlank">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="353dp"
+                        android:layout_height="126dp"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/meta_pig" />
+
+                    <TextView
+                        android:id="@+id/textMeta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginTop="@dimen/text_margin"
+                        android:text="@string/tittle_metaCard"
+                        android:textColor="@color/colorTitles"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textMetaAnimo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_margin"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:text="@string/tittle_metaCardTips"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_element"
+                android:background="@color/colorBlank">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_image_card"
+                        android:layout_height="@dimen/height_image_card"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/leard_pig" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/tittle_aprende"
+                            android:textColor="@color/colorTitles"
+                            android:textSize="@dimen/title_text_size"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/aprende_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/descripcion_aprende"
+                            android:textColor="@color/colorText" />
+
+                        <Button
+                            android:id="@+id/btn_cv_aprende"
+                            android:layout_width="@dimen/width_button_card"
+                            android:layout_height="@dimen/height_button_card"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:background="@color/colorButton"
+                            android:text="@string/btn_comenzar"
+                            android:textColor="@color/colorTextButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_element"
+                android:background="@color/colorBlank">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_image_card"
+                        android:layout_height="@dimen/height_image_card"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/pig_ahorro" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/tittle_ahorro"
+                            android:textColor="@color/colorTitles"
+                            android:textSize="@dimen/title_text_size"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/ahorra_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/descripcion_ahorro"
+                            android:textColor="@color/colorText" />
+
+                        <Button
+                            android:id="@+id/btn_cv_ahorra"
+                            android:layout_width="@dimen/width_button_card"
+                            android:layout_height="@dimen/height_button_card"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:background="@color/colorButton"
+                            android:text="@string/btn_comenzar"
+                            android:textColor="@color/colorTextButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_element"
+                android:background="@color/colorBlank">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_image_card"
+                        android:layout_height="@dimen/height_image_card"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/calcula_pig" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/tittle_administra"
+                            android:textColor="@color/colorTitles"
+                            android:textSize="@dimen/title_text_size"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/administra_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/descripcion_admin"
+                            android:textColor="@color/colorText" />
+
+                        <Button
+                            android:id="@+id/btn_cv_admistra"
+                            android:layout_width="@dimen/width_button_card"
+                            android:layout_height="@dimen/height_button_card"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:background="@color/colorButton"
+                            android:text="@string/btn_comenzar"
+                            android:textColor="@color/colorTextButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_element"
+                android:background="@color/colorBlank">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_image_card"
+                        android:layout_height="@dimen/height_image_card"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/pig_agenda" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/tittle_agenda"
+                            android:textColor="@color/colorTitles"
+                            android:textSize="@dimen/title_text_size"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/agenda_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginLeft="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:text="@string/descripcion_agenda"
+                            android:textColor="@color/colorText" />
+
+                        <Button
+                            android:id="@+id/btn_cv_agenda"
+                            android:layout_width="@dimen/width_button_card"
+                            android:layout_height="@dimen/height_button_card"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="@dimen/text_margin"
+                            android:layout_marginRight="@dimen/text_margin"
+                            android:background="@color/colorButton"
+                            android:text="@string/btn_comenzar"
+                            android:textColor="@color/colorTextButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
 
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Cerrar Sesion" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -22,7 +22,7 @@
 
 
     <!--View Ahorro-->
-    <string name="tittle_ahorro">Ahorro</string>
+    <string name="tittle_ahorro">Ahorra</string>
     <string name="descripcion_ahorro">Todo lo que necesitas saber solo en unos pocos minutos.</string>
 
     <!--View Administra-->
@@ -30,7 +30,7 @@
     <string name="descripcion_admin">Todo lo que necesitas saber solo en unos pocos minutos.</string>
 
     <!--View Agenda-->
-    <string name="tittle_agenda">Agende</string>
+    <string name="tittle_agenda">Agenda</string>
     <string name="descripcion_agenda">Todo lo que necesitas saber solo en unos pocos minutos.</string>
 
     <!--Botones -->
