@@ -1,3 +1,63 @@
 <resources>
     <string name="app_name">LittlePig</string>
+    <string name="app_registro">Registro</string>
+    <string name="title_registro">Completa los siguientes datos</string>
+    <string name="email">Email</string>
+
+    <string name="title_activity_resgistro">Resgistro</string>
+    <string name="title_activity_menu">Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--View Metas-->
+    <string name="tittle_metaCard">Analiza tu meta</string>
+    <string name="tittle_metaCardTips">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+
+    <!--View Aprende-->
+    <string name="tittle_aprende">Aprende</string>
+    <string name="descripcion_aprende">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+
+
+    <!--View Ahorro-->
+    <string name="tittle_ahorro">Ahorro</string>
+    <string name="descripcion_ahorro">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+
+    <!--View Administra-->
+    <string name="tittle_administra">Administra</string>
+    <string name="descripcion_admin">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+
+    <!--View Agenda-->
+    <string name="tittle_agenda">Agende</string>
+    <string name="descripcion_agenda">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+
+    <!--Botones -->
+    <string name="btn_comenzar">Comenzar</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_registrar">Registrate</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_ok">Listo</string>
+
+
+    <!--Tips -->
+
+
+    <!--Titulos-->
+    <string name="tittle_ingresos_fijos">Ingresos Fijos</string>
+    <string name="tittle_ingresos_variables">Ingresos Variables</string>
+
+    <string name="tittle_gastos_fijos">Gastos Fijos</string>
+    <string name="tittle_gastos_variables">Gastos Variables</string>
+    <string name="tittle_gastos_hormiga">Gastos Hormiga</string>
+
+    <!--Lecciones -->
+    <string name="text_leccion_ahorro">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="text_leccion_metas">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="text_leccion_ingreso">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="text_leccion_gasto">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+
 </resources>
