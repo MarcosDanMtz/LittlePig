@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "839881704404",
+    "firebase_url": "https://littlepig-97685.firebaseio.com",
+    "project_id": "littlepig-97685",
+    "storage_bucket": "littlepig-97685.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839881704404:android:b2ec325327991c00",
+        "android_client_info": {
+          "package_name": "com.example.marcosmtz.littlepig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839881704404-jltdcim6jni382k6eehup1ecjqct4g9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1X0oOTjIvzaMxywwEd65thh_1daYmeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
