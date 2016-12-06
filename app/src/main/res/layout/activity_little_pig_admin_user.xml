@@ -133,7 +133,8 @@
                             android:layout_marginRight="@dimen/text_margin"
                             android:background="@color/colorButton"
                             android:text="@string/btn_comenzar"
-                            android:textColor="@color/colorTextButton" />
+                            android:textColor="@color/colorTextButton"
+                            />
                     </LinearLayout>
 
                 </LinearLayout>

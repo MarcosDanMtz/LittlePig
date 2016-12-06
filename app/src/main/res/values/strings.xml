@@ -13,8 +13,16 @@
     <string name="action_settings">Settings</string>
 
     <!--View Metas-->
+    <string name="tittle_meta">Meta</string>
     <string name="tittle_metaCard">Analiza tu meta</string>
     <string name="tittle_metaCardTips">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="tittle_meta_add">Proponte tu meta</string>
+    <string name="meta_add_text_name">¿Cuál es tu meta?</string>
+    <string name="meta_add_in_name">Dinos en pocas palabras</string>
+    <string name="meta_add_text_valor">¿Cuanto se necesita para lo lograr lo qe quieres?</string>
+    <string name="meta_add_in_valor">Dale un valor monetario</string>
+    <string name="meta_add_text_tiempo">¿En cuanto tiempo lo piensas lograr?</string>
+    <string name="meta_add_in_tiempo">Cuanto tiempo queda(meses)</string>
 
     <!--View Aprende-->
     <string name="tittle_aprende">Aprende</string>
@@ -29,6 +37,19 @@
     <string name="tittle_administra">Administra</string>
     <string name="descripcion_admin">Todo lo que necesitas saber solo en unos pocos minutos.</string>
 
+    <!--View add ingresos/gastos -->
+    <string name="title_ingreso_add">Agrega un nuevo ingreso</string>
+    <string name="title_gasto_add">Agrega un nuevo gasto</string>
+    <string name="add_ingreso_name_text">Nombre</string>
+    <string name="add_ingreso_name_in">Dale el nombre mas apropiado</string>
+    <string name="add_valor_text">¿Cuánto es?</string>
+    <string name="add_valor_in">Valor moneratio</string>
+    <string name="add_descrip_text">Descripción</string>
+    <string name="add_descrip_in">Escribe toda la informacion que creas importante recordar</string>
+    <string name="add_tipo_text">Tipo</string>
+    <string name="add_tipo_fijo">Fijo</string>
+    <string name="add_tipo_var">Variable</string>
+
     <!--View Agenda-->
     <string name="tittle_agenda">Agenda</string>
     <string name="descripcion_agenda">Todo lo que necesitas saber solo en unos pocos minutos.</string>
@@ -41,21 +62,33 @@
     <string name="btn_menu">Menu</string>
     <string name="btn_agregar">Agregar</string>
     <string name="btn_ok">Listo</string>
+    <string name="btn_comen_ya">Comenzar ya</string>
+    <string name="btn_recomienda">Recomendaciones</string>
+    <string name="btn_ajusta">Ajustar</string>
+    <string name="btn_guardar">Guardar</string>
 
 
     <!--Tips -->
+    <string name="text_revisa">Revisa las recomendaciones que "Little Pig" tiene para tu situacion y descubre como te puede ayudar a mejorar.</string>
+    <string name="text_estatus">Aqui se mostrara tu estado de balance y te diremos si es bueno de o malo.</string>
+    <string name="text_actual">De acuerdo con tus ingresos y gastos que conoce "Little Pig", se calcula que nesecitas ahorrar: 20% de tu ingreso total</string>
+    <string name="tip_1">Elimina tus gastos Hormiga. Te estan saliendo caros.</string>
+    <string name="tip_2">Preguntate si lo quieres o de verdad lo necesitas.</string>
+    <string name="tip_3">Compara costos en todos los lugares que puedas antes de comprar algo.</string>
 
 
     <!--Titulos-->
     <string name="tittle_ingresos_fijos">Ingresos Fijos</string>
     <string name="tittle_ingresos_variables">Ingresos Variables</string>
+    <string name="tittle_ingreso">Ingresos</string>
 
     <string name="tittle_gastos_fijos">Gastos Fijos</string>
     <string name="tittle_gastos_variables">Gastos Variables</string>
     <string name="tittle_gastos_hormiga">Gastos Hormiga</string>
+    <string name="tittle_gasto">Gastos</string>
 
     <!--Lecciones -->
-    <string name="text_leccion_ahorro">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="text_leccion_ahorro">En esta seccion aprenderemos que es el ahorrar, porque es importante tener este habito y las distintas formas que existen para lograrlo.</string>
     <string name="text_leccion_metas">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
     <string name="text_leccion_ingreso">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
     <string name="text_leccion_gasto">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>

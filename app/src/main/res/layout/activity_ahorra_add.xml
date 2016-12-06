@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ahorra_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.marcosmtz.littlepig.AhorraAdd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="Registra tu ahorro"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/colorTitles" />
+
+            <TextView
+                android:text="Cantidad:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_marginTop="@dimen/margin_first_element"
+                android:textSize="20dp"
+                android:textColor="@color/colorTitles"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Cantidad ahorrada"
+                android:ems="10"
+                android:textColor="@color/colorText"
+                />
+
+            <TextView
+                android:text="Fecha:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_first_element"
+                android:textSize="20dp"
+                android:textColor="@color/colorTitles"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:text="Añade la fecha del deposito"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/colorTitles"
+                android:text="Tus ahorros totales:"
+                android:layout_marginTop="@dimen/margin_first_element"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:textColor="@color/colorTitles"
+                android:text="$ 0.00"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_element"/>
+
+            <Button
+                android:text="@string/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_marginTop="@dimen/margin_first_element"
+                android:textColor="@color/colorTextButton"
+                android:background="@color/colorButton"
+                android:textSize="@dimen/button_text_size"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
