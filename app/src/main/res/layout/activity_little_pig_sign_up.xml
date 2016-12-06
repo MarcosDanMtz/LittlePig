@@ -10,54 +10,109 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.marcosmtz.littlepig.LittlePigSignUp">
 
-    <LinearLayout
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
-        <TextView
-            android:text="Registrate aquí"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_above="@+id/linearLayout"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/textViewTitle" />
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:text="Registrate aquí"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_above="@+id/linearLayout"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textViewTitle" />
 
 
-        <EditText
-            android:layout_margin="15dp"
-            android:inputType="textEmailAddress"
-            android:hint="Ingresa tu email"
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Nombre Completo:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitleUserName" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Nombre Compleo"
+                android:ems="10"
+                android:id="@+id/editTextUserName" />
+
+            <TextView
+                android:text="Ingresa tu correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitleEmail" />
+
+            <EditText
+                android:layout_margin="15dp"
+                android:inputType="textEmailAddress"
+                android:hint="littlepig@ejemplo.com"
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-        <EditText
-            android:layout_margin="15dp"
-            android:inputType="textPassword"
-            android:hint="Ingresa tu contraseña"
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Ingresa tu contraseña:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitlePassword" />
 
+            <EditText
+                android:layout_margin="15dp"
+                android:inputType="textPassword"
+                android:hint="Mayor a 7 caracteres"
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/buttonSignUp"
-            android:text="Registrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Confirma contraseña:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitlePasswordRe" />
 
+            <EditText
+                android:layout_margin="15dp"
+                android:inputType="textPassword"
+                android:hint="Confirma tu contraseña"
+                android:id="@+id/editTextPasswordRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/textViewSignin"
-            android:textAlignment="center"
-            android:text="Estas Registrado? Ingresa aquí"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-</RelativeLayout>
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:text="Unirse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonSignUpFacebook"
+                android:text="Usar Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorFB"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewSignin"
+                android:textAlignment="center"
+                android:text="Estas Registrado? Ingresa aquí"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView></RelativeLayout>
