@@ -47,7 +47,7 @@
                 android:inputType="textShortMessage"
                 android:text="@string/add_ingreso_name_in"
                 android:ems="10"
-                android:id="@+id/input_meta_name"
+                android:id="@+id/EditTextInputMeta_name"
                 android:textColor="@color/colorText"
 
 

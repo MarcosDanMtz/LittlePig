@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.marcosmtz.littlepig.Objects.FirebaseReferences;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -58,7 +59,7 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        DatabaseReference ref = database.getReference("UserData/" + user.getUid() + "/fullName");
+        DatabaseReference ref = database.getReference(FirebaseReferences.USERDATA_REFERENCE + "/" + user.getUid() + "/fullName");
 
         try {
             ref.addValueEventListener(new ValueEventListener() {

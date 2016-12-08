@@ -50,7 +50,9 @@
             android:id="@+id/buttonSignUp"
             android:text="Inicia Sesion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/cardview_light_background" />
 
 
         <TextView

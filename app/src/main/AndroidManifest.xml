@@ -19,8 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".LittlePigLogIn" />
+
+        <!--<activity android:name=".LittlePigLogIn" />-->
         <activity android:name=".LittlePigAdminUser" />
 
         <!-- Apartir de aqui se agregan pantallas nuevas, tu las comentas o eliminas -->
@@ -38,9 +38,9 @@
         <activity android:name=".AhorraAdd" />
         <activity android:name=".AgendaView" />
         <activity android:name=".AgendaAdd"></activity>
-=======
-        <activity android:name=".LittlePigAdminUser"></activity>
->>>>>>> origin/master
+
+        <!--<activity android:name=".LittlePigAdminUser"></activity>-->
+
     </application>
 
 </manifest>

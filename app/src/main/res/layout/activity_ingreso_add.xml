@@ -48,7 +48,7 @@
                 android:inputType="textShortMessage"
                 android:text="@string/add_ingreso_name_in"
                 android:ems="10"
-                android:id="@+id/input_meta_name"
+                android:id="@+id/editTextInputIncomeName"
                 android:textColor="@color/colorText"
 
 
@@ -71,7 +71,7 @@
                 android:inputType="numberDecimal"
                 android:text="@string/add_valor_in"
                 android:ems="10"
-                android:id="@+id/input_meta_costo"
+                android:id="@+id/editTextInputIncomeValue"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 />
@@ -93,7 +93,7 @@
                 android:inputType="textMultiLine"
                 android:text="@string/add_descrip_in"
 
-                android:id="@+id/input_meta_tiempo"
+                android:id="@+id/editTextInputIncomeDescription"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 android:textAlignment="gravity"
@@ -120,10 +120,11 @@
                     android:text="@string/add_tipo_fijo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonIncomeFijo"
                     android:layout_weight="1"
                     android:layout_marginRight="80dp"
                     android:textColor="@color/colorText"
+                    android:checked="true"
                     android:textSize="18dp"
                     />
 
@@ -131,17 +132,20 @@
                     android:text="@string/add_tipo_var"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonIncomeVariable"
                     android:layout_weight="1"
                     android:textColor="@color/colorText"
+                    android:checked="false"
                     android:textSize="18dp"/>
             </RadioGroup>
+            <!--Si es fijo hay que poner el periodo de tiempo en el
+            que sera fijo, es decir cada cuando-->
 
             <Button
                 android:text="@string/btn_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/buttonAgrega"
+                android:id="@+id/buttonAddIncome"
                 android:layout_weight="0.00"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/margin_first_element"

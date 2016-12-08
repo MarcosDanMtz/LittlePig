@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.text.TextUtils;
 
+import com.example.marcosmtz.littlepig.InfoToSave.UserInformation;
+import com.example.marcosmtz.littlepig.Objects.FirebaseReferences;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -72,7 +74,7 @@ public class LittlePigSignUp extends AppCompatActivity implements View.OnClickLi
         String email = editTextEmail.getText().toString().trim(); //Uso de trim
         String password = editTextPassword.getText().toString().trim();
         String passswordRepeat = editTextPasswordRepeat.getText().toString().trim();
-        //String username = editTextUserName.getText().toString().trim();
+        String username = editTextUserName.getText().toString().trim();
 
 
         if (!isEmailValid(email)){
@@ -87,17 +89,9 @@ public class LittlePigSignUp extends AppCompatActivity implements View.OnClickLi
         }
 
 
-        if (TextUtils.isEmpty(email)){
+        if (TextUtils.isEmpty(email) || TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
             //campo email esta vacio
-            Toast.makeText(this, "El campo email esta vacio", Toast.LENGTH_SHORT).show();//uso de Toast
-            //Deteniendo la funcion execution further
-            return;
-        }else
-
-
-        if (TextUtils.isEmpty(password)){
-            //campo contraseña esta vacio
-            Toast.makeText(this,"El campo contraseña esta vacio", Toast.LENGTH_SHORT ).show();
+            Toast.makeText(this, "Existen campos vacios", Toast.LENGTH_SHORT).show();//uso de Toast
             //Deteniendo la funcion execution further
             return;
         }else if (!password.equals(passswordRepeat)) {
@@ -133,8 +127,10 @@ public class LittlePigSignUp extends AppCompatActivity implements View.OnClickLi
         UserInformation userInformation = new UserInformation(fullName);
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
+        //Sin modificacion en el agregado en tiempo rela
+        databaseReference.child(FirebaseReferences.USERDATA_REFERENCE).child(user.getUid()).setValue(userInformation);
 
-        databaseReference.child("UserData").child(user.getUid()).setValue(userInformation);
+        //Con cambios en tiempo real
 
         Toast.makeText(this, "Informacion Guardada...", Toast.LENGTH_LONG).show();
         finish();
