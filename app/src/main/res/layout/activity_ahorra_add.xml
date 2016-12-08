@@ -88,7 +88,7 @@
                 android:text="@string/btn_guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button3"
+                android:id="@+id/btn_ahorro_guardar"
                 android:layout_marginTop="@dimen/margin_first_element"
                 android:textColor="@color/colorTextButton"
                 android:background="@color/colorButton"

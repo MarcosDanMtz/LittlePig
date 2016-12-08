@@ -88,12 +88,13 @@
                     android:layout_marginTop="@dimen/margin_first_element"
                     android:text="@string/btn_ajusta"
                     android:textSize="@dimen/button_text_size"
-                    android:id="@+id/button2" />
+                    android:id="@+id/btn_ajustar" />
 
             </LinearLayout>
 
 
             <Button
+                android:id="@+id/btn_tip_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorTextButton"

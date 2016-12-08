@@ -20,6 +20,11 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
     private FirebaseAuth firebaseAuth;
     private TextView textViewUserEmail;
     private Button buttonLogOut;
+    private Button buttonAprende;
+    private Button buttonAhorra;
+    private Button buttonAdmin;
+    private Button buttonAgenda;
+
     private DatabaseReference databaseReference;
 
     @Override
@@ -43,6 +48,15 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
         buttonLogOut.setOnClickListener(this);*/
         buttonLogOut = (Button) findViewById(R.id.buttonLogout);
         buttonLogOut.setOnClickListener(this);
+        buttonAprende = (Button) findViewById(R.id.btn_cv_aprende);
+        buttonAprende.setOnClickListener(this);
+        buttonAhorra = (Button) findViewById(R.id.btn_cv_ahorra);
+        buttonAhorra.setOnClickListener(this);
+        buttonAdmin = (Button) findViewById(R.id.btn_cv_admistra);
+        buttonAdmin.setOnClickListener(this);
+        buttonAgenda = (Button) findViewById(R.id.btn_cv_agenda);
+        buttonAgenda.setOnClickListener(this);
+
     }
 
     @Override
@@ -51,6 +65,22 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
             firebaseAuth.signOut();
             finish();
             startActivity(new Intent(this, LittlePigLogIn.class));
+        }
+        else if (view == buttonAprende){
+            //finish();
+            startActivity(new Intent(this, TeoriaAhorro.class));
+        }
+        else if (view == buttonAhorra){
+            //finish();
+            startActivity(new Intent(this, AhorraAdd.class));
+        }
+        else if (view == buttonAdmin){
+            //finish();
+            startActivity(new Intent(this, BalanceView.class));
+        }
+        else if (view == buttonAgenda){
+            //finish();
+            startActivity(new Intent(this, AgendaView.class));
         }
     }
 
@@ -68,7 +98,7 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
 
                     textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
 
-                    textViewUserEmail.setText("Bienbenido " + value);
+                    textViewUserEmail.setText("Bienvenido " + value);
                 }
 
                 @Override

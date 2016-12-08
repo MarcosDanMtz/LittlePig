@@ -42,6 +42,7 @@
                 android:textColor="@color/colorText"/>
 
             <Button
+                android:id="@+id/btn_siguiente_gasto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txt_leccion"

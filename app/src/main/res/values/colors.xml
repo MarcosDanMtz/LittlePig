@@ -9,4 +9,6 @@
     <color name="colorTextButton">#fafafa</color>
     <color name="colorFB">#3b5998</color>
     <color name="colorBlank">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

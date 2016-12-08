@@ -24,20 +24,22 @@
             android:id="@+id/linearLayout">
 
             <TextView
-                android:text="Registrate aquí"
+                android:text="Registrate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_above="@+id/linearLayout"
-                android:layout_gravity="center_horizontal"
                 android:id="@+id/textViewTitle" />
 
 
             <TextView
-                android:text="Nombre Completo:"
+                android:text="Nombre:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewTitleUserName" />
+                android:id="@+id/textViewTitleUserName"
+                android:textColor="@color/colorTitles"
+                android:textSize="@dimen/title_text_size"
+                android:layout_marginTop="@dimen/margin_first_element"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -45,12 +47,15 @@
                 android:inputType="textPersonName"
                 android:text="Nombre Compleo"
                 android:ems="10"
+                android:textColor="@color/colorText"
                 android:id="@+id/editTextUserName" />
 
             <TextView
                 android:text="Ingresa tu correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorTitles"
+                android:textSize="@dimen/title_text_size"
                 android:id="@+id/textViewTitleEmail" />
 
             <EditText
@@ -66,6 +71,8 @@
                 android:text="Ingresa tu contraseña:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorTitles"
+                android:textSize="@dimen/title_text_size"
                 android:id="@+id/textViewTitlePassword" />
 
             <EditText
@@ -80,6 +87,8 @@
                 android:text="Confirma contraseña:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorTitles"
+                android:textSize="@dimen/title_text_size"
                 android:id="@+id/textViewTitlePasswordRe" />
 
             <EditText
@@ -97,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorAccent"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="18sp" />
+                android:textSize="@dimen/button_text_size" />
 
             <Button
                 android:id="@+id/buttonSignUpFacebook"
@@ -106,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorFB"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="14sp" />
+                android:textSize="@dimen/button_text_size" />
 
             <TextView
                 android:id="@+id/textViewSignin"
@@ -115,4 +124,5 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
-    </ScrollView></RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

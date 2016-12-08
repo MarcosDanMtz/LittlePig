@@ -100,7 +100,7 @@
                 android:text="@string/btn_comen_ya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/buttonAgrega"
+                android:id="@+id/btn_agrega_meta"
                 android:layout_weight="0.00"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/margin_first_element"
