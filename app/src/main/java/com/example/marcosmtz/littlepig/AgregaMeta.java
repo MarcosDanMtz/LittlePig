@@ -38,7 +38,6 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
         editTextGoalTime = (EditText) findViewById(R.id.editTextGoalTime);
         buttonAddGoal = (Button) findViewById(R.id.buttonAddGoal);
         databaseReference = FirebaseDatabase.getInstance().getReference();
-
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() == null){
             finish();
