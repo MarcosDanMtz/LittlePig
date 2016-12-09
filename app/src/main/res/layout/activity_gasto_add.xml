@@ -47,7 +47,7 @@
                 android:inputType="textShortMessage"
                 android:text="@string/add_ingreso_name_in"
                 android:ems="10"
-                android:id="@+id/EditTextInputMeta_name"
+                android:id="@+id/EditTextExpenseName"
                 android:textColor="@color/colorText"
 
 
@@ -70,7 +70,7 @@
                 android:inputType="numberDecimal"
                 android:text="@string/add_valor_in"
                 android:ems="10"
-                android:id="@+id/input_meta_costo"
+                android:id="@+id/EditTextExpenseValue"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 />
@@ -91,7 +91,7 @@
                 android:layout_height="100dp"
                 android:inputType="textMultiLine"
                 android:text="@string/add_descrip_in"
-                android:id="@+id/input_meta_tiempo"
+                android:id="@+id/EditTextExpenseDescription"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 android:textAlignment="gravity"
@@ -119,7 +119,7 @@
                     android:text="@string/add_tipo_fijo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonExpenseFijo"
                     android:layout_weight="1"
                     android:layout_marginRight="80dp"
                     android:textColor="@color/colorText"
@@ -130,17 +130,20 @@
                     android:text="@string/add_tipo_var"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonExpenseVariable"
                     android:layout_weight="1"
                     android:textColor="@color/colorText"
                     android:textSize="18dp"/>
             </RadioGroup>
 
+            <!--Si es fijo hay que agregar cada cuando
+            se repite el gasto-->
+
             <Button
                 android:text="@string/btn_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/buttonAgrega"
+                android:id="@+id/buttonAddExpense"
                 android:layout_weight="0.00"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/margin_first_element"

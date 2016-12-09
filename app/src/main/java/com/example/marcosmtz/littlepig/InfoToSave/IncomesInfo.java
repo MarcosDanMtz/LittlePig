@@ -6,9 +6,9 @@ package com.example.marcosmtz.littlepig.InfoToSave;
 
 public class IncomesInfo {
     public String IncomeName;
-    public Double IncomeValue;
+    public double IncomeValue;
     public String IncomeDescription;
-    public Boolean FixedIncome;
+    public boolean FixedIncome;
 
     public void setIncomeName(String incomeName) {
         IncomeName = incomeName;
@@ -42,7 +42,7 @@ public class IncomesInfo {
         return FixedIncome;
     }
 
-    public IncomesInfo(String incomeName, Double incomeValue, String incomeDescription, Boolean fixedIncome) {
+    public IncomesInfo(String incomeName, double incomeValue, String incomeDescription, Boolean fixedIncome) {
         IncomeName = incomeName;
         IncomeValue = incomeValue;
         IncomeDescription = incomeDescription;

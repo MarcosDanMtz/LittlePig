@@ -82,7 +82,7 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
             DatabaseReference incomeRef = database.getReference(FirebaseReferences.INCOME_REFERENCE);
             IncomesInfo income = new IncomesInfo(IncomeName, Double.parseDouble(ImcomeValue), IncomeDescription, IncomeFijo);
             incomeRef.child(user.getUid()).push().setValue(income);
-            Toast.makeText(this, "Ingresaste un nuevo ingreso", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Registraste un nuevo ingreso", Toast.LENGTH_SHORT).show();
         }catch (Exception e){
             Toast.makeText(this, "Error al almacenar informacion", Toast.LENGTH_LONG).show();
         }
