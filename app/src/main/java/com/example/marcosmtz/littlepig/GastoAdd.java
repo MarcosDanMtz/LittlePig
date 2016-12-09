@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EdgeEffect;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,6 +37,13 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gasto_add);
 
+        editTextExpenseName = (EditText) findViewById(R.id.editTextExpenseName);
+        editTextExpenseValue = (EditText) findViewById(R.id.editTextExpenseValue);
+        editTextExpenseDescription = (EditText) findViewById(R.id.editTextExpenseDescription);
+        radioButtonExpenseFijo = (RadioButton) findViewById(R.id.radioButtonExpenseFijo);
+        radioButtonExpenseVariable = (RadioButton) findViewById(R.id.radioButtonExpenseVariable);
+        buttonAddExpense = (Button) findViewById(R.id.buttonAddExpense);
+
         databaseReference = FirebaseDatabase.getInstance().getReference();
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -49,6 +58,9 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
+        if (buttonAddExpense == view){
+            SaveExpense();
+        }
 
     }
 

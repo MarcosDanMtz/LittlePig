@@ -47,7 +47,7 @@
                 android:inputType="textShortMessage"
                 android:text="@string/add_ingreso_name_in"
                 android:ems="10"
-                android:id="@+id/EditTextExpenseName"
+                android:id="@+id/editTextExpenseName"
                 android:textColor="@color/colorText"
 
 
@@ -70,7 +70,7 @@
                 android:inputType="numberDecimal"
                 android:text="@string/add_valor_in"
                 android:ems="10"
-                android:id="@+id/EditTextExpenseValue"
+                android:id="@+id/editTextExpenseValue"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 />
@@ -91,7 +91,7 @@
                 android:layout_height="100dp"
                 android:inputType="textMultiLine"
                 android:text="@string/add_descrip_in"
-                android:id="@+id/EditTextExpenseDescription"
+                android:id="@+id/editTextExpenseDescription"
                 android:layout_weight="0.00"
                 android:textColor="@color/colorText"
                 android:textAlignment="gravity"
