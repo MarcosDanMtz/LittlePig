@@ -20,29 +20,57 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LittlePigSignUp" />
+
+
         <activity android:name=".LittlePigLogIn"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
+        <activity
+            android:name=".LittlePigSignUp"
+            android:label="Registrate"
+            android:parentActivityName="com.example.marcosmtz.littlepig.LittlePigLogIn"
+            />
 
-        <activity android:name=".LittlePigAdminUser" />
+
+        <activity android:name=".LittlePigAdminUser"
+            android:label="LittlePig - Home"
+            />
 
         <!-- Apartir de aqui se agregan pantallas nuevas, tu las comentas o eliminas -->
-        <activity android:name=".TeoriaAhorro" />
-        <activity android:name=".TeoriaMeta" />
-        <activity android:name=".TeoriaIngreso" />
-        <activity android:name=".TeoriaGasto" />
-        <activity android:name=".AgregaMeta" />
-        <activity android:name=".IngresosView" />
-        <activity android:name=".GastosView" />
-        <activity android:name=".IngresoAdd" />
-        <activity android:name=".GastoAdd" />
-        <activity android:name=".BalanceView" />
-        <activity android:name=".TipsView" />
-        <activity android:name=".AhorraAdd" />
-        <activity android:name=".AgendaView" />
-        <activity android:name=".AgendaAdd" />
+        <activity android:name=".TeoriaAhorro"
+            android:label="LittlePig - Ahorros"/>
+        <activity android:name=".TeoriaMeta"
+            android:label="LittlePig - Metas"/>
+        <activity android:name=".TeoriaIngreso"
+            android:label="LittlePig - Ingresos"/>
+        <activity android:name=".TeoriaGasto"
+            android:label="LittlePig - Gastos"/>
+        <activity android:name=".AgregaMeta"
+            android:label="Proponte tu Meta"
+            />
+        <activity android:name=".IngresosView"
+            android:label="Tus Ingresos"/>
+        <activity android:name=".GastosView"
+            android:label="Tus Gastos"/>
+        <activity android:name=".IngresoAdd"
+            android:label="Nuevo Ingreso"
+            android:parentActivityName="com.example.marcosmtz.littlepig.IngresosView"/>
+        <activity android:name=".GastoAdd"
+            android:label="Nuevo Gasto"
+            android:parentActivityName="com.example.marcosmtz.littlepig.GastosView"/>
+        <activity android:name=".BalanceView"
+            android:label="Administrate"/>
+        <activity android:name=".TipsView"
+            android:label="Recomendaciones"
+            android:parentActivityName="com.example.marcosmtz.littlepig.BalanceView"/>
+        <activity android:name=".AhorraAdd"
+            android:label="Registra tu Ahorro"
+            android:parentActivityName="com.example.marcosmtz.littlepig.AgendaView"/>
+        <activity android:name=".AgendaView"
+            android:label="Revisa tu progreso"/>
+        <activity android:name=".AgendaAdd"
+            android:label="Nuevo Evento"/>
 
     </application>
 

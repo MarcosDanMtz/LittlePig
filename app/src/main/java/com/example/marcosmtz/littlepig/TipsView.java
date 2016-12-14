@@ -18,7 +18,7 @@ public class TipsView extends AppCompatActivity implements View.OnClickListener 
 
         btnAjustar = (Button) findViewById(R.id.btn_ajustar);
         btnAjustar.setOnClickListener(this);
-        btnMenu= (Button) findViewById(R.id.btn_tip_menu);
+        btnMenu= (Button) findViewById(R.id.btn_tips_menu);
         btnMenu.setOnClickListener(this);
     }
 

@@ -31,7 +31,8 @@ public class IngresosView extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, TeoriaGasto.class));
         }
         else if (view == btnAgregar) {
-        startActivity(new Intent(this, IngresoAdd.class));
+            startActivity(new Intent(this, IngresoAdd.class));
         }
     }
 }
+

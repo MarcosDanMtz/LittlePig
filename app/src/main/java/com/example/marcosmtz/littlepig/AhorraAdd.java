@@ -1,6 +1,5 @@
 package com.example.marcosmtz.littlepig;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +14,8 @@ public class AhorraAdd extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_ahorra_add);
         btnGuardar = (Button) findViewById(R.id.btn_ahorro_guardar);
         btnGuardar.setOnClickListener(this);
+
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override
     public void onClick(View view){

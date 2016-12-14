@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.marcosmtz.littlepig.Objects.FirebaseReferences;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -20,12 +21,11 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
     private FirebaseAuth firebaseAuth;
     private TextView textViewUserEmail;
     private Button buttonLogOut;
+    private DatabaseReference databaseReference;
     private Button buttonAprende;
     private Button buttonAhorra;
     private Button buttonAdmin;
     private Button buttonAgenda;
-
-    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,7 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
         buttonLogOut.setOnClickListener(this);*/
         buttonLogOut = (Button) findViewById(R.id.buttonLogout);
         buttonLogOut.setOnClickListener(this);
+
         buttonAprende = (Button) findViewById(R.id.btn_cv_aprende);
         buttonAprende.setOnClickListener(this);
         buttonAhorra = (Button) findViewById(R.id.btn_cv_ahorra);
@@ -56,7 +57,6 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
         buttonAdmin.setOnClickListener(this);
         buttonAgenda = (Button) findViewById(R.id.btn_cv_agenda);
         buttonAgenda.setOnClickListener(this);
-
     }
 
     @Override
@@ -67,19 +67,15 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
             startActivity(new Intent(this, LittlePigLogIn.class));
         }
         else if (view == buttonAprende){
-            //finish();
             startActivity(new Intent(this, TeoriaAhorro.class));
         }
         else if (view == buttonAhorra){
-            //finish();
             startActivity(new Intent(this, AhorraAdd.class));
         }
         else if (view == buttonAdmin){
-            //finish();
             startActivity(new Intent(this, BalanceView.class));
         }
         else if (view == buttonAgenda){
-            //finish();
             startActivity(new Intent(this, AgendaView.class));
         }
     }
@@ -88,7 +84,7 @@ public class LittlePigAdminUser extends AppCompatActivity implements View.OnClic
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        DatabaseReference ref = database.getReference("UserData/" + user.getUid() + "/fullName");
+        DatabaseReference ref = database.getReference(FirebaseReferences.USERDATA_REFERENCE + "/" + user.getUid() + "/fullName");
 
         try {
             ref.addValueEventListener(new ValueEventListener() {

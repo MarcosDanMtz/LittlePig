@@ -21,19 +21,12 @@
             android:weightSum="1">
 
             <TextView
-                android:text="Recomendaciones"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:textSize="@dimen/button_text_size"
-                android:textColor="@color/colorTitles"/>
-            <TextView
                 android:text="Actualmente:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/title_text_size"
                 android:textColor="@color/colorTitles"
-                android:layout_marginTop="@dimen/margin_first_element"/>
+                android:layout_marginTop="@dimen/text_margin"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -94,7 +87,7 @@
 
 
             <Button
-                android:id="@+id/btn_tip_menu"
+                android:id="@+id/btn_tips_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorTextButton"

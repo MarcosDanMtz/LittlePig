@@ -93,8 +93,4 @@
     <string name="text_leccion_ingreso">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
     <string name="text_leccion_gasto">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
 
-    <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-
 </resources>
