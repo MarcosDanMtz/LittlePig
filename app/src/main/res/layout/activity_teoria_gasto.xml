@@ -39,7 +39,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_margin"
                 android:text="@string/text_leccion_gasto"
-                android:textColor="@color/colorText"/>
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/tex_size"
+                />
 
             <Button
                 android:id="@+id/btn_siguiente_gasto"

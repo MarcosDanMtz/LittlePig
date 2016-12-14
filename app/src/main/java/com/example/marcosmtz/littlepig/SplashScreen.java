@@ -45,7 +45,7 @@ public class SplashScreen extends AppCompatActivity {
             timer.schedule(task, SPLASH_SCREEN_DELAY);
         }catch (Exception e){
             finish();
-            startActivity(new Intent(this, LittlePigSignUp.class));
+            startActivity(new Intent(this, LittlePigAdminUser.class));
         }
     }
 }

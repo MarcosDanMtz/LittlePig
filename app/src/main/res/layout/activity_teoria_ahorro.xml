@@ -28,7 +28,7 @@
                  android:id="@+id/title_leccion"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:layout_margin="@dimen/text_margin"
+                 android:layout_marginTop="@dimen/text_margin"
                  android:text="@string/tittle_ahorro"
                  android:textColor="@color/colorTitles"
                  android:textSize="@dimen/title_text_size"
@@ -40,7 +40,9 @@
                  android:layout_height="wrap_content"
                  android:layout_margin="@dimen/text_margin"
                  android:text="@string/text_leccion_ahorro"
-                 android:textColor="@color/colorText"/>
+                 android:textColor="@color/colorText"
+                 android:textSize="@dimen/tex_size"
+                 />
 
              <Button
                  android:id="@+id/btn_ahorro_siguiente"

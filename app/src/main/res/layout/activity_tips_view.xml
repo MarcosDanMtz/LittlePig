@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/title_text_size"
-                android:text="@string/text_actual"/>
+                android:text="@string/text_revisa"/>
 
             <TextView
                 android:text="Considera:"
@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_element"
-                    android:text="@string/tip_1"
+                    android:text="Tip de Little Pig"
                     android:textSize="@dimen/title_text_size"
                     />
 
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_element"
-                    android:text="@string/tip_2"
+                    android:text="Tip de Little Pig"
                     android:textSize="@dimen/title_text_size"
                     />
                 <TextView
@@ -69,7 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_element"
-                    android:text="@string/tip_3"
+                    android:text="Tip de Little Pig"
                     android:textSize="@dimen/title_text_size"
                     />
 

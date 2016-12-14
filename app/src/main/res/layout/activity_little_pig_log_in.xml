@@ -57,13 +57,13 @@
 
         <Button
             android:id="@+id/buttonSignUp"
-            android:text="Iniciar Sesion"
+            android:text="Iniciar Sesión"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorTextButton"
             android:textSize="@dimen/button_text_size"
             android:background="@color/colorButton"
-            android:layout_marginTop="@dimen/margin_element"/>
+            android:layout_marginTop="@dimen/margin_first_element"/>
 
 
         <TextView

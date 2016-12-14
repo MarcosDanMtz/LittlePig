@@ -19,7 +19,7 @@
     <string name="tittle_meta_add">Proponte tu meta</string>
     <string name="meta_add_text_name">¿Cuál es tu meta?</string>
     <string name="meta_add_in_name">Dinos en pocas palabras</string>
-    <string name="meta_add_text_valor">¿Cuanto se necesita para lo lograr lo qe quieres?</string>
+    <string name="meta_add_text_valor">¿Cuanto se necesita para lo lograr lo que quieres?</string>
     <string name="meta_add_in_valor">Dale un valor monetario</string>
     <string name="meta_add_text_tiempo">¿En cuanto tiempo lo piensas lograr?</string>
     <string name="meta_add_in_tiempo">Cuanto tiempo queda(meses)</string>
@@ -31,11 +31,11 @@
 
     <!--View Ahorro-->
     <string name="tittle_ahorro">Ahorra</string>
-    <string name="descripcion_ahorro">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+    <string name="descripcion_ahorro">Añade un nuevo ahorro y mira cuanto haz logrado hasta ahora.</string>
 
     <!--View Administra-->
     <string name="tittle_administra">Administra</string>
-    <string name="descripcion_admin">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+    <string name="descripcion_admin">Analiza tus números y aprende a avanzar mas rápido.</string>
 
     <!--View add ingresos/gastos -->
     <string name="title_ingreso_add">Agrega un nuevo ingreso</string>
@@ -52,7 +52,7 @@
 
     <!--View Agenda-->
     <string name="tittle_agenda">Agenda</string>
-    <string name="descripcion_agenda">Todo lo que necesitas saber solo en unos pocos minutos.</string>
+    <string name="descripcion_agenda">Mira que tan constante eres y a cuanto tiempo estas de alcanzar tu meta.</string>
 
     <!--Botones -->
     <string name="btn_comenzar">Comenzar</string>
@@ -67,16 +67,6 @@
     <string name="btn_ajusta">Ajustar</string>
     <string name="btn_guardar">Guardar</string>
 
-
-    <!--Tips -->
-    <string name="text_revisa">Revisa las recomendaciones que "Little Pig" tiene para tu situacion y descubre como te puede ayudar a mejorar.</string>
-    <string name="text_estatus">Aqui se mostrara tu estado de balance y te diremos si es bueno de o malo.</string>
-    <string name="text_actual">De acuerdo con tus ingresos y gastos que conoce "Little Pig", se calcula que nesecitas ahorrar: 20% de tu ingreso total</string>
-    <string name="tip_1">Elimina tus gastos Hormiga. Te estan saliendo caros.</string>
-    <string name="tip_2">Preguntate si lo quieres o de verdad lo necesitas.</string>
-    <string name="tip_3">Compara costos en todos los lugares que puedas antes de comprar algo.</string>
-
-
     <!--Titulos-->
     <string name="tittle_ingresos_fijos">Ingresos Fijos</string>
     <string name="tittle_ingresos_variables">Ingresos Variables</string>
@@ -87,8 +77,41 @@
     <string name="tittle_gastos_hormiga">Gastos Hormiga</string>
     <string name="tittle_gasto">Gastos</string>
 
+    <!--Conclusiones -->
+    <string name="text_con_masGasto">Eres una emergencia financiera con patitas y traes un buen relajito. Te tienes que aplicar ¡pero ya!, si no quieres llegar a la bancarrota.</string>
+    <string name="text_con_igual">Tienes que checar a que le vas a pellizcar para tener recursos extras para ahorro de tus metas y emergencias.</string>
+    <string name="text_con_menosGasto">¡Felicidades! Ya eres de los “avanzados” y te fallan pocas o casi ninguna área de tus finanzas. </string>
+
+    <!--Tips -->
+    <string name="text_revisa">Revisa las recomendaciones que "Little Pig" tiene para tu situacion y descubre como te puede ayudar a mejorar.</string>
+    <string name="text_estatus">Aqui se mostrara tu estado de balance y te diremos si es bueno de o malo.</string>
+    <string name="text_actual">De acuerdo con tus ingresos y gastos que conoce "Little Pig", se calcula que nesecitas ahorrar: 20% de tu ingreso total</string>
+
+    <string name="masIngreso_tip1">•	La mayoría de la gente acumula, pero has ahí. La idea es que estos recursos se multipliquen, pide informes y mete la lana que tengas para invertir en una cuenta de cetes directos o pagarés bancarios.</string>
+    <string name="masIngrso_tip2">•	Antes de que hagas una compra impulsiva, detente, respira y pregunta pregúntate si de verdad lo necesitas o simplemente lo quieres y si es así ¿de verdad lo vale?.</string>
+    <string name="masIngreso_tip3">•	Identifica las fugas de luz, agua y gas, generalmente en casa desperdiciamos en abundancia.</string>
+
+    <string name="igual_tip1">•	¡Comparte! El pago de internet lo podrías compartir con un vecino, recuerda que la unión hace el descuento.</string>
+    <string name="igual_tip2">•	Puedes lavar a mano y con mucho cuidado lo que normalmente mandamos a la tintorería.</string>
+    <string name="igual_tip3">•	Sal a correr con tus cuates en lugar de pagar las sesiones de Pilates.</string>
+
+    <string name="menosIngreso_tip1">•	En ocasiones el mismo producto, servicio o actividad tiene algún sustituto que resulta más barato, si lo intercambiamos de vez en cuando (o permanentemente, si es que nos conviene más) nos ayudará bajarle a la gastalonez sin hacer grandísimos sacrificios.</string>
+    <string name="menosIngrso_tip2">Preguntate si lo quieres o de verdad lo necesitas.</string>
+    <string name="menosIngreso_tip3">•	Bajar la frecuencia de los cortes de pelo, ir al auto-lavado, incluso el número de veces que sales a cenar, son gastos que haces cada cierto tiempo y que igual si los espacias un poco no te vas a morir y en cambio te pueden generar un ahorro anual.</string>
+
+
+
     <!--Lecciones -->
-    <string name="text_leccion_ahorro">En esta seccion aprenderemos que es el ahorrar, porque es importante tener este habito y las distintas formas que existen para lograrlo.</string>
+    <string name="text_leccion_ahorro">
+        Lo que te gastas de más hoy en cosas que no te importan tanto, le roban dinero a aquellas que realmente quieres para tu futuro.\n\n
+¿Qué es el ahorro?\n
+Es la parte del ingreso que no se destina al gasto y que se reserva para necesidades futuras.
+Muchos dirán: “No se puede”; “no tengo dinero para ahorrar”; “apenas me alcanza con lo que gano”, etcétera, etcétera, pero el nivel de ingresos tiene poco o nada que ver con ahorrar.
+\n\n¿Por qué es importante?\n
+La vida está llena de eventualidades: puedes perder tu trabajo o simplemente descubrir que tu pasión en la vida no está en tu oficina, puedes chocar y necesitar pagar el deducible o recibir a un bebé hermoso en tu familia, tener un ahorro te permite poder enfrentar diversas situaciones, aprovechar oportunidades o lograr tus metas.
+\n\n¿Por qué no puedo ahorrar?\n
+Una de las causas más comunes de fracaso en el intento por ahorrar es esperar a guardar el dinero hasta hacer todos nuestros gastos. “Ahorrar lo que sobre” es una mala estrategia por un pequeño detalle: nunca sobra. Si no son los pagos diarios, sucede una emergencia o, simplemente, “todavía tengo dinero”, nos damos un gustito y adiós. Además, como no tenemos una idea real de cuánto tendremos disponible al final, es imposible planear. Lo más efectivo es separar el monto que nos hemos propuesto ahorrar en el instante en que recibimos la quincena, el bono, el aguinaldo, el reparto de utilidades o el pago por una deuda. Si no lo tenemos, ¿cómo lo gastamos?
+</string>
 
     <string name="text_leccion_metas1">¿Por qué ahorrar si no tienes un fin? ¿Por qué ajustarse el cinturón hoy si no esperas un beneficio mañana? El ahorro no es algo que tengas que hacer porque todo mundo dice que es sano, la verdadera razón de por qué es necesario ahorrar, sentarse a hacer números y ver en dónde recortar, es justamente saber cómo lograremos financiar nuestros sueños.</string>
     <string name="text_leccion_meta_def">¿Qué es una meta?</string>
@@ -108,7 +131,19 @@ Vamos a despedirnos de los sueños guajiros de “algún día haré tal o cuál�
 \t\t•	Normalmente si no lo calendarizamos se nos va el tiempo. Ni nos comprometemos realmente con la meta y no tomamos las acciones intermedias necesarias para alcanzarla.\n\n
 </string>
 
-    <string name="text_leccion_ingreso">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
-    <string name="text_leccion_gasto">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+    <string name="text_leccion_ingreso">Esto es lo que ganas ya después de impuestos y efectivamente cae a tu bolsa, el momento en el que recibes el dinero es importante para la planeación, así puedes ahorrar con anticipación para cuando se presente algún desembolso.
+\n\nIngreso fijo\n
+Es un salario que recibes de una empresa, como pueden ser las rentas que recibes por alquilar unos inmuebles o bien unos ingresos que, si bien no son fijos, pueden ser más o menos constantes.
+\n\nIngreso variable\n
+Son todos los ingresos que no son constantes, por ejemplo, si eres vendedor, las comisiones de ventas que realices.\n\n
+</string>
+    <string name="text_leccion_gasto">Saber identificar nuestros gastos nos permite saber cómo usamos nuestro dinero, hay muchísimas formas de organizar la información de tus gastos y la idea es que utilices la que te permita entender mejor en qué se te va el dinero. Aquí te sugerimos escribir todos los conceptos dividiéndolos entre fijos, variables y hormiga.
+\n\nGastos fijos\n
+Son los que son idénticos todos los meses o de un pago a otro (si es que tienen una periodicidad diferente a 30 días). Puede ser el pago de la luz, compra de alimentos, transporte, etc.
+\n\nGastos variables\n
+Como su nombre lo dice, pueden tener montos distintos cada mes o incluso presentarse en un periodo y en el siguiente no. Pueden depender del consumo, como es la cuenta del celular, para los que tienen plan y también en algunos casos este tipo de gastos son más flexibles y podemos elegir si los hacemos o no, como los del entretenimiento.
+\n\nGastos hormiga\n
+Son gastos pequeños pero frecuentes que hacemos casi sin darnos cuenta y que en suma pueden hacer un buen boquete en nuestro presupuesto. Puede ser propinas, dulces, comidas fuera, taxis, el cafecito de la mañana, etc.\n\n
+</string>
 
 </resources>
