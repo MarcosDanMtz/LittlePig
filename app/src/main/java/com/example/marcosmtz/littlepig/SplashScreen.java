@@ -32,7 +32,7 @@ public class SplashScreen extends AppCompatActivity {
 
                     // Start the next activity
                     Intent mainIntent = new Intent().setClass(
-                            SplashScreen.this, LittlePigAdminUser.class);
+                            SplashScreen.this, LittlePigLogIn.class);
                     // Close the activity so the user won't able to go back this
                     // activity pressing Back button
                     finish();
@@ -45,7 +45,7 @@ public class SplashScreen extends AppCompatActivity {
             timer.schedule(task, SPLASH_SCREEN_DELAY);
         }catch (Exception e){
             finish();
-            startActivity(new Intent(this, LittlePigLogIn.class));
+            startActivity(new Intent(this, LittlePigSignUp.class));
         }
     }
 }

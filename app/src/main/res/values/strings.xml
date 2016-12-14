@@ -89,7 +89,25 @@
 
     <!--Lecciones -->
     <string name="text_leccion_ahorro">En esta seccion aprenderemos que es el ahorrar, porque es importante tener este habito y las distintas formas que existen para lograrlo.</string>
-    <string name="text_leccion_metas">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
+
+    <string name="text_leccion_metas1">¿Por qué ahorrar si no tienes un fin? ¿Por qué ajustarse el cinturón hoy si no esperas un beneficio mañana? El ahorro no es algo que tengas que hacer porque todo mundo dice que es sano, la verdadera razón de por qué es necesario ahorrar, sentarse a hacer números y ver en dónde recortar, es justamente saber cómo lograremos financiar nuestros sueños.</string>
+    <string name="text_leccion_meta_def">¿Qué es una meta?</string>
+    <string name="text_leccion_metas2">La casa de tus sueños, la maestría que quieres hacer, a la universidad de tus hijos, la empresa que siempre quisiste abrir, incluso tu retiro a más temprana edad.
+    Para que una meta realmente funcione tiene que tener cuatro cualidades:\n\n
+        \t\t1.	Ser especifica\n
+        \t\t2.	Incluir el monto exacto\n
+        \t\t3.	Fijar fecha de termino\n
+        \t\t4.	Explicar el cómo del asunto\n</string>
+
+    <string name="text_leccion_meta_importante">¿Porqué es importante?</string>
+    <string name="text_leccion_metas3">Cuando no tenemos metas claras cualquier cosa que se presente es buena para gastar y boicotear nuestras finanzas, lo que te gastas de más hoy en cosas que no te importan tanto, le roban dinero a aquellas que realmente quieres para tu futuro.\n\n
+Ahora proponte tu meta\n\n
+Vamos a despedirnos de los sueños guajiros de “algún día haré tal o cuál” y los convertirás en metas efectivas con descripción específica, costo, fecha y cómo o qué vas a modificar para lograrlas.\n
+\t\t•	Si el dinero no fuera un obstáculo ¿qué es lo más que quisieras hacer?\n\n
+\t\t•	Si sabes cuánto cuesta ya estás del otro lado, sólo escríbelo. Si no, échate un clavado en internet, date una vuelta en los lugares donde vendan lo que quieres o platica con la gente que ya lo hizo para enterarte exactamente.\n\n
+\t\t•	Normalmente si no lo calendarizamos se nos va el tiempo. Ni nos comprometemos realmente con la meta y no tomamos las acciones intermedias necesarias para alcanzarla.\n\n
+</string>
+
     <string name="text_leccion_ingreso">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
     <string name="text_leccion_gasto">No te rindas y recuerda tomar encuenta todos los consejos del little pig.</string>
 

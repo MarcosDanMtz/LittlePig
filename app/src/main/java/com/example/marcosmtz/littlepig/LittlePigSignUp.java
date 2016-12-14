@@ -59,6 +59,7 @@ public class LittlePigSignUp extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent (getApplicationContext(), LittlePigAdminUser.class));
         }
 
+
         progressDialog = new ProgressDialog(this);
         buttonSignUp = (Button) findViewById(R.id.buttonSignUp);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
