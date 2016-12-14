@@ -20,14 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/textTittle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.00"
-                android:text="@string/tittle_meta_add"
-                android:textColor="@color/colorTitles"
-                android:textSize="@dimen/title_text_size" />
 
             <TextView
                 android:text="@string/meta_add_text_name"
@@ -106,8 +98,6 @@
                 android:textColor="@color/colorTextButton"
                 android:textSize="10pt"
                 />
-
-
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

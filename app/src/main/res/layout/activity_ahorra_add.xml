@@ -23,14 +23,6 @@
             android:orientation="vertical" >
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:text="Registra tu ahorro"
-                android:textSize="@dimen/button_text_size"
-                android:textColor="@color/colorTitles" />
-
-            <TextView
                 android:text="Cantidad:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,10 +77,10 @@
                 android:layout_marginTop="@dimen/margin_element"/>
 
             <Button
+                android:id="@+id/btn_ahorro_guardar"
                 android:text="@string/btn_guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button3"
                 android:layout_marginTop="@dimen/margin_first_element"
                 android:textColor="@color/colorTextButton"
                 android:background="@color/colorButton"

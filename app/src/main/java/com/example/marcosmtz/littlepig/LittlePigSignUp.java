@@ -47,6 +47,8 @@ public class LittlePigSignUp extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_little_pig_sign_up);
 
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+
         firebaseAuth = FirebaseAuth.getInstance();
         //Para la base de datos acceder a la raiz
         databaseReference = FirebaseDatabase.getInstance().getReference();

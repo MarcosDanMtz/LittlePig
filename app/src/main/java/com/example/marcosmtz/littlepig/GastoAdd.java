@@ -37,12 +37,15 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gasto_add);
 
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+
         editTextExpenseName = (EditText) findViewById(R.id.editTextExpenseName);
         editTextExpenseValue = (EditText) findViewById(R.id.editTextExpenseValue);
         editTextExpenseDescription = (EditText) findViewById(R.id.editTextExpenseDescription);
         radioButtonExpenseFijo = (RadioButton) findViewById(R.id.radioButtonExpenseFijo);
         radioButtonExpenseVariable = (RadioButton) findViewById(R.id.radioButtonExpenseVariable);
         buttonAddExpense = (Button) findViewById(R.id.buttonAddExpense);
+        buttonAddExpense.setOnClickListener(this);
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
         firebaseAuth = FirebaseAuth.getInstance();
@@ -60,6 +63,8 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         if (buttonAddExpense == view){
             SaveExpense();
+            finish();
+            //startActivity(new Intent(this, GastosView.class));
         }
 
     }

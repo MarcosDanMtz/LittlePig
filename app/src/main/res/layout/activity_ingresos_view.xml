@@ -93,7 +93,7 @@
                    android:layout_width="@dimen/btn_edit"
                    android:layout_height="@dimen/btn_edit"
                    android:layout_gravity="center_vertical"
-                   android:layout_marginLeft="@dimen/margin_edit"
+                   android:layout_marginLeft="@dimen/margin_deleta"
                    card_view:srcCompat="@android:drawable/ic_menu_edit"
                    android:background="@color/colorBlank"
                    />
@@ -152,7 +152,7 @@
                            android:layout_width="35dp"
                            android:layout_height="35dp"
                            android:layout_gravity="center_vertical"
-                           android:layout_marginLeft="50dp"
+                           android:layout_marginLeft="@dimen/margin_deleta"
                            card_view:srcCompat="@android:drawable/ic_menu_edit"
                            android:background="@color/colorBlank"
 
@@ -185,7 +185,7 @@
                            android:layout_width="@dimen/btn_edit"
                            android:layout_height="@dimen/btn_edit"
                            android:layout_gravity="center_vertical"
-                           android:layout_marginLeft="@dimen/margin_edit"
+                           android:layout_marginLeft="@dimen/margin_deleta"
                            card_view:srcCompat="@android:drawable/ic_menu_edit"
                            android:background="@color/colorBlank"
                            />
@@ -203,6 +203,7 @@
            </android.support.v7.widget.CardView>
 
            <Button
+               android:id="@+id/btn_agrega_ingreso"
                android:text="@string/btn_agregar"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
@@ -215,7 +216,8 @@
                />
 
            <Button
-               android:text="@string/btn_ok"
+               android:id="@+id/btn_listo_ingreso"
+               android:text="@string/btn_siguiente"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_weight="0.00"

@@ -34,12 +34,15 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingreso_add);
 
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+
         editTextIncomeName = (EditText) findViewById(R.id.editTextInputIncomeName);
         editTextIncomeValue = (EditText) findViewById(R.id.editTextInputIncomeName);
         editTextIncomeDescripcion = (EditText) findViewById(R.id.editTextInputIncomeDescription);
         radioButtonIncomeFijo = (RadioButton) findViewById(R.id.radioButtonIncomeFijo);
         radioButtonIncomeVariable = (RadioButton) findViewById(R.id.radioButtonIncomeVariable);
         buttonAddIncome = (Button) findViewById(R.id.buttonAddIncome);
+        buttonAddIncome.setOnClickListener(this);
 
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
@@ -56,6 +59,8 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         if (view == buttonAddIncome) {
             RegistrerIncome ();
+            finish();
+            //startActivity(new Intent(this, IngresosView.class));
         }
     }
 

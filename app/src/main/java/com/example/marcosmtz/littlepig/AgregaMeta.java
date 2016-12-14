@@ -33,6 +33,8 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agrega_meta);
 
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+
         editTextGoalName = (EditText) findViewById(R.id.editTextGoalName);
         editTextGoalValue = (EditText) findViewById(R.id.editTextGoalValue);
         editTextGoalTime = (EditText) findViewById(R.id.editTextGoalTime);
@@ -44,6 +46,8 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
             startActivity(new Intent(this, LittlePigLogIn.class));
         }
 
+        buttonAddGoal.setOnClickListener(this);
+
     }
 
 
@@ -51,6 +55,8 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         if (buttonAddGoal == view){
             RegisterGoal();
+            finish();
+            startActivity(new Intent(this, TeoriaIngreso.class));
         }
     }
 
