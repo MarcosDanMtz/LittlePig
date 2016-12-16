@@ -5,44 +5,47 @@ package com.example.marcosmtz.littlepig.InfoToSave;
  */
 
 public class GoalsInfo {
-    public String GoalName;
-    public double GoalValue;
-    public double GoalTime;
+    public String goalName;
+    public float goalValue;
+    public float goalTime;
 
     public GoalsInfo() {
     }
 
     public void setGoalName(String goalName) {
-        GoalName = goalName;
+        this.goalName = goalName;
     }
 
-    public void setGoalValue(double goalValue) {
-        GoalValue = goalValue;
+    public void setGoalValue(float goalValue) {
+        this.goalValue = goalValue;
     }
 
-    public void setGoalTime(double goalTime) {
-        GoalTime = goalTime;
+    public void setGoalTime(float goalTime) {
+        this.goalTime = goalTime;
     }
-
 
     public String getGoalName() {
-        return GoalName;
+        return goalName;
     }
 
-    public double getGoalValue() {
-        return GoalValue;
+    public float getGoalValue() {
+        return goalValue;
     }
 
-    public double getGoalTime() {
-        return GoalTime;
+    public float getGoalTime() {
+        return goalTime;
+    }
+
+    public GoalsInfo(String goalName, float goalValue, float goalTime) {
+        this.goalName = goalName;
+        this.goalValue = goalValue;
+        this.goalTime = goalTime;
     }
 
 
-    public GoalsInfo(String goalName, double goalValue, double goalTime) {
-        GoalName = goalName;
-        GoalValue = goalValue;
-        GoalTime = goalTime;
-    }
+
+
+
 
 
 }

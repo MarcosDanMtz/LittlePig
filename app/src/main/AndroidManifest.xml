@@ -34,7 +34,6 @@
         <activity
             android:name=".LittlePigSignUp"
             android:label="Registrate"
-            android:parentActivityName="com.example.marcosmtz.littlepig.LittlePigLogIn"
             />
 
 
@@ -59,19 +58,15 @@
         <activity android:name=".GastosView"
             android:label="Tus Gastos"/>
         <activity android:name=".IngresoAdd"
-            android:label="Nuevo Ingreso"
-            android:parentActivityName="com.example.marcosmtz.littlepig.IngresosView"/>
+            android:label="Nuevo Ingreso" />
         <activity android:name=".GastoAdd"
-            android:label="Nuevo Gasto"
-            android:parentActivityName="com.example.marcosmtz.littlepig.GastosView"/>
+            android:label="Nuevo Gasto" />
         <activity android:name=".BalanceView"
             android:label="Administrate"/>
         <activity android:name=".TipsView"
-            android:label="Recomendaciones"
-            android:parentActivityName="com.example.marcosmtz.littlepig.BalanceView"/>
+            android:label="Recomendaciones" />
         <activity android:name=".AhorraAdd"
-            android:label="Registra tu Ahorro"
-            android:parentActivityName="com.example.marcosmtz.littlepig.AgendaView"/>
+            android:label="Registra tu Ahorro" />
         <activity android:name=".AgendaView"
             android:label="Revisa tu progreso"/>
         <activity android:name=".AgendaAdd"

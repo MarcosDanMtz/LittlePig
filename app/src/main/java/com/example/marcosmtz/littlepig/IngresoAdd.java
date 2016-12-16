@@ -37,7 +37,7 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
         //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         editTextIncomeName = (EditText) findViewById(R.id.editTextInputIncomeName);
-        editTextIncomeValue = (EditText) findViewById(R.id.editTextInputIncomeName);
+        editTextIncomeValue = (EditText) findViewById(R.id.editTextInputIncomeValue);
         editTextIncomeDescripcion = (EditText) findViewById(R.id.editTextInputIncomeDescription);
         radioButtonIncomeFijo = (RadioButton) findViewById(R.id.radioButtonIncomeFijo);
         radioButtonIncomeVariable = (RadioButton) findViewById(R.id.radioButtonIncomeVariable);
@@ -59,8 +59,6 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         if (view == buttonAddIncome) {
             RegistrerIncome ();
-            finish();
-            //startActivity(new Intent(this, IngresosView.class));
         }
     }
 
@@ -69,15 +67,10 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
         String ImcomeValue = editTextIncomeValue.getText().toString().trim();
         String IncomeDescription = editTextIncomeDescripcion.getText().toString().trim();
         boolean IncomeFijo = radioButtonIncomeFijo.isChecked();
-        boolean IncomeVariable = radioButtonIncomeVariable.isChecked();
 
         if (TextUtils.isEmpty(IncomeName) || TextUtils.isEmpty(ImcomeValue))
         {
             Toast.makeText(this, "Existem campos vacios", Toast.LENGTH_SHORT).show();
-            return;
-        }else if (IncomeFijo == false || IncomeVariable == false)
-        {
-            Toast.makeText(this, "Debe escoger el tipo de ingreso", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -85,9 +78,11 @@ public class IngresoAdd extends AppCompatActivity implements View.OnClickListene
             FirebaseUser user = firebaseAuth.getCurrentUser();
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference incomeRef = database.getReference(FirebaseReferences.INCOME_REFERENCE);
-            IncomesInfo income = new IncomesInfo(IncomeName, Double.parseDouble(ImcomeValue), IncomeDescription, IncomeFijo);
+            IncomesInfo income = new IncomesInfo(IncomeName, Float.parseFloat(ImcomeValue), IncomeDescription, IncomeFijo);
             incomeRef.child(user.getUid()).push().setValue(income);
             Toast.makeText(this, "Registraste un nuevo ingreso", Toast.LENGTH_SHORT).show();
+            finish();
+            startActivity(new Intent(this, IngresosView.class));
         }catch (Exception e){
             Toast.makeText(this, "Error al almacenar informacion", Toast.LENGTH_LONG).show();
         }

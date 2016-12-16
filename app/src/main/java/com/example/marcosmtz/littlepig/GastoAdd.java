@@ -74,15 +74,10 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
         String expenseValue = editTextExpenseValue.getText().toString().trim();
         String expenseDescription = editTextExpenseDescription.getText().toString().trim();
         boolean expenseFijo = radioButtonExpenseFijo.isChecked();
-        boolean expenseVariable = radioButtonExpenseVariable.isChecked();
 
         if (TextUtils.isEmpty(expenseName) || TextUtils.isEmpty(expenseValue))
         {
             Toast.makeText(this, "Existem campos vacios", Toast.LENGTH_SHORT).show();
-            return;
-        }else if (expenseFijo == false || expenseVariable == false)
-        {
-            Toast.makeText(this, "Debe escoger el tipo de ingreso", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -90,7 +85,7 @@ public class GastoAdd extends AppCompatActivity implements View.OnClickListener 
             FirebaseUser user = firebaseAuth.getCurrentUser();
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference expenseRef = database.getReference(FirebaseReferences.EXPENSE_REFERENCE);
-            ExpensesInfo expense = new ExpensesInfo(expenseName, Double.parseDouble(expenseValue), expenseDescription, expenseFijo);
+            ExpensesInfo expense = new ExpensesInfo(expenseName, Float.parseFloat(expenseValue), expenseDescription, expenseFijo);
             expenseRef.child(user.getUid()).push().setValue(expense);
             Toast.makeText(this, "Registraste un nuevo gasto", Toast.LENGTH_SHORT).show();
         }catch (Exception e){

@@ -5,48 +5,48 @@ package com.example.marcosmtz.littlepig.InfoToSave;
  */
 
 public class IncomesInfo {
-    public String IncomeName;
-    public double IncomeValue;
-    public String IncomeDescription;
-    public boolean FixedIncome;
+    public String incomeName;
+    public float incomeValue;
+    public String incomeDescription;
+    public boolean fixedIncome;
 
     public void setIncomeName(String incomeName) {
-        IncomeName = incomeName;
+        this.incomeName = incomeName;
     }
 
-    public void setIncomeValue(Double incomeValue) {
-        IncomeValue = incomeValue;
+    public void setIncomeValue(float incomeValue) {
+        this.incomeValue = incomeValue;
     }
 
     public void setIncomeDescription(String incomeDescription) {
-        IncomeDescription = incomeDescription;
+        this.incomeDescription = incomeDescription;
     }
 
-    public void setFixedIncome(Boolean fixedIncome) {
-        FixedIncome = fixedIncome;
+    public void setFixedIncome(boolean fixedIncome) {
+        this.fixedIncome = fixedIncome;
     }
 
     public String getIncomeName() {
-        return IncomeName;
+        return incomeName;
     }
 
-    public Double getIncomeValue() {
-        return IncomeValue;
+    public float getIncomeValue() {
+        return incomeValue;
     }
 
     public String getIncomeDescription() {
-        return IncomeDescription;
+        return incomeDescription;
     }
 
-    public Boolean getFixedIncome() {
-        return FixedIncome;
+    public boolean isFixedIncome() {
+        return fixedIncome;
     }
 
-    public IncomesInfo(String incomeName, double incomeValue, String incomeDescription, Boolean fixedIncome) {
-        IncomeName = incomeName;
-        IncomeValue = incomeValue;
-        IncomeDescription = incomeDescription;
-        FixedIncome = fixedIncome;
+    public IncomesInfo(String incomeName, float incomeValue, String incomeDescription, boolean fixedIncome) {
+        this.incomeName = incomeName;
+        this.incomeValue = incomeValue;
+        this.incomeDescription = incomeDescription;
+        this.fixedIncome = fixedIncome;
     }
 
     public IncomesInfo() {

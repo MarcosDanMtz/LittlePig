@@ -110,7 +110,7 @@ public class LittlePigLogIn extends AppCompatActivity implements View.OnClickLis
         }
 
         if (view==textViewSignUp){
-            //finish();
+            finish();
             startActivity(new Intent(this, LittlePigSignUp.class));
         }
     }

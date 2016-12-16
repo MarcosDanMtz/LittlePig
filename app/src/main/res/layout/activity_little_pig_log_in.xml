@@ -18,14 +18,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
         android:weightSum="1">
-        <ImageView
-            android:layout_width="290dp"
-            android:layout_height="250dp"
-            app:srcCompat="@mipmap/icon_little_pig"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
 
         <!--
         <TextView

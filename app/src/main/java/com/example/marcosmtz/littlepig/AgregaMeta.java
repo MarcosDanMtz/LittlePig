@@ -53,10 +53,8 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        if (buttonAddGoal == view){
+        if (view == buttonAddGoal){
             RegisterGoal();
-            finish();
-            startActivity(new Intent(this, TeoriaIngreso.class));
         }
     }
 
@@ -73,11 +71,11 @@ public class AgregaMeta extends AppCompatActivity implements View.OnClickListene
 
         try{
             FirebaseUser user = firebaseAuth.getCurrentUser();
-            FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference goalRef = database.getReference(FirebaseReferences.GOAL_REFERENCE);
-            GoalsInfo goal = new GoalsInfo(goalName, Double.parseDouble(goalValue), Double.parseDouble(goalTime));
-            goalRef.child(user.getUid()).push().setValue(goal);
+            GoalsInfo goal = new GoalsInfo(goalName, Float.parseFloat(goalValue), Float.parseFloat(goalTime));
+            databaseReference.child(FirebaseReferences.GOAL_REFERENCE).child(user.getUid()).push().setValue(goal);
             Toast.makeText(this, "Registraste una nueva Meta", Toast.LENGTH_SHORT).show();
+            finish();
+            startActivity(new Intent(this, TeoriaIngreso.class));
         }catch (Exception e){
             Toast.makeText(this, "Error al almacenar informacion", Toast.LENGTH_LONG).show();
         }

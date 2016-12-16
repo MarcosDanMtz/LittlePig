@@ -6,7 +6,7 @@ package com.example.marcosmtz.littlepig.InfoToSave;
 
 public class ExpensesInfo {
     public String expenseName;
-    public double expenseValue;
+    public float expenseValue;
     public String expenseDescription;
     public boolean fixedExpense;
 
@@ -14,7 +14,7 @@ public class ExpensesInfo {
         this.expenseName = expenseName;
     }
 
-    public void setExpenseValue(double expenseValue) {
+    public void setExpenseValue(float expenseValue) {
         this.expenseValue = expenseValue;
     }
 
@@ -42,7 +42,7 @@ public class ExpensesInfo {
         return fixedExpense;
     }
 
-    public ExpensesInfo(String expenseName, double expenseValue, String expenseDescription, boolean fixedExpense) {
+    public ExpensesInfo(String expenseName, float expenseValue, String expenseDescription, boolean fixedExpense) {
         this.expenseName = expenseName;
         this.expenseValue = expenseValue;
         this.expenseDescription = expenseDescription;
